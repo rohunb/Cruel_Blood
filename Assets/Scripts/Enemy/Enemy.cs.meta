@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 360d0770e3988824c9494684d8888692
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - bloodSpray: {fileID: 19800000, guid: 0b45ce01184df0149bab7930a42b33fa, type: 2}
+  - CurrentWeapon: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

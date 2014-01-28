@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: ad1cf595f18f0d0499dd1e2d64c6cf5e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - player: {fileID: 400006, guid: 95a84991ddc81a14fa428410d65a10b0, type: 2}
+  - CurrentWeapon: {instanceID: 0}
+  - arrow: {fileID: 100000, guid: f79116fb8f30e454b868446c8f6625f6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
