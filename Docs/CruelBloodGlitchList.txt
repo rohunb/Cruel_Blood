@@ -1,0 +1,29 @@
+
+1) Bow needs to add to combo. This may be optional, maybe turn the bow into a last-result weapon.
+2) Reduce the multi-kill on the axe so it doesn't cut through ten guys. Upgrade multi-kill with each point spent on axe
+3) Stop movement from halting when colliding with enemies when attacking with spear. Should be able to go through a line of 3 or 4 guys instead of stopping from hitting the first guy.
+4) Balance enemies. There needs to be much more enemies each wave. Needs to be hectic swinging.
+5) Fix Ogre. Right now there is a plethora of glitches surrounding the ogre. Player turns invisible when hit by grapple. Needs to do damage. Needs to add to Bosses Killed stat. Needs blood sprays on death. More decisions when play-testing a functional ogre. Currently set to 1 health just to make progression through levels a little less glitchy.
+6) Levels Completed Stat doesn't increment
+7) Boss's Killed Stat doesn't increment
+8) Give only one or two health at beginning. It will force people to buy a health upgrade at the beginning. It is possible
+9) Balance Sword - Dash should be last upgrade.
+10) Player arrows need size increase
+11) Player Speed upgrade is not implemented
+12) Shield enemies do not attack. Also, shields don't show. Hammer should do more damage to shield guys then any other weapon
+13) Increase enemy damage, health, attack range, etc. the more waves completed (perhaps after every ogre wave)
+14) If archer has reloaded and moves before shooting, then as soon as they stop they can loose their arrow. Should make their reload timer reset every time they go to move. Gives player chance to kill archer without getting hit
+15) Start with sword instead of axe.
+16) Have mages deal continual damage while their lightning connects
+17) Combo should carry over to next level
+18) Combo should reset after moving if the attack doesn't connect with an enemy
+19) At the moment, mage damage is 0
+20) Mage takes too long to acquire an enemy. Reduce by at least 0.5 seconds
+21) Perhaps change Bow upgrade from Damage to a multi-shot or some other attribute. Otherwise with about 3 upgrades you can one-shot the rangers.
+22) Reduce the time it takes to display the Game Over screen. Right now, character sits there for a second with only feet showing. That, or display a death animation of the player
+23) Increase the swing speed of the axe with each upgrade. Right now, If you upgrade the axe, it takes for ever to complete its multiple spins
+24) Add in the credits screen
+25) Spear and some other actions are missing sounds
+26) Adjust for different sized screens
+
+From <https://snt148.mail.live.com/default.aspx?id=64855> 
