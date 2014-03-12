@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
     private bool dead = false;
     private float timeTillScreen = 0.0f;
     private const float TIME_TO_GAMEOVER = 0.50f;
-
+	GameObject[] BodyParts;
     // Use this for initialization
     void Start()
     {
@@ -39,6 +39,7 @@ public class PlayerMove : MonoBehaviour
         playerSlowDown = 0.75f;
         playerState = PlayerMove.PlayerState.Stationary;
         EquipWeapon("Axe");
+		BodyParts = GameObject.FindGameObjectsWithTag("PlayerBodyPart");
     }
 
     // Update is called once per frame
@@ -58,14 +59,19 @@ public class PlayerMove : MonoBehaviour
             invincibilityTimer += Time.deltaTime;
             alpha = Mathf.Abs(Mathf.Cos(invincibilityTimer * 9));
             Color spriteColor = this.GetComponent<SpriteRenderer>().color;
-
-            this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, alpha);
-
+			foreach(GameObject part in BodyParts)
+			{
+            	part.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, alpha);
+			}
+			this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, alpha);
             if (invincibilityTimer >= TIME_INVINCIBLE)
             {
                 invincible = false;
                 invincibilityTimer = 0;
-              
+				foreach(GameObject part in BodyParts)
+				{
+					part.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 1.0f);
+				}
                this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 1.0f);
             }
         }
@@ -73,7 +79,8 @@ public class PlayerMove : MonoBehaviour
         {
             Color spriteColor = this.GetComponent<SpriteRenderer>().color;
             timeTillScreen += Time.deltaTime;
-            this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 0.0f);
+            //this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 0.0f);
+			this.gameObject.SetActive(false);
             if(timeTillScreen >= TIME_TO_GAMEOVER)
                 Application.LoadLevel("GameOver");
         }
