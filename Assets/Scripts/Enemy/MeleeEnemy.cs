@@ -35,7 +35,7 @@ public class MeleeEnemy : Enemy {
                 {
                     if (timeTillAttack <= 0)
                     {
-                        Debug.Log("Attacl");
+
                         CurrentWeapon.renderer.enabled = true;
                         CurrentWeapon.collider2D.enabled = true;
                         CurrentWeapon.PerformAttack();

@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	public virtual void Start () {
-        Debug.Log("enemy start");
+
         markedForDeath = false;
         timeSinceLastAttack = attackSpeed;
         player = GameObject.FindGameObjectWithTag("Player").transform;
