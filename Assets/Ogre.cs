@@ -33,6 +33,7 @@ public class Ogre : MeleeEnemy
         playerMove = player.GetComponent<PlayerMove>();
         state = OgreState.Hunting;
         currentTimer = grappleReloadTimer;
+        Debug.Log(health);
     }
 
     public override void Update()

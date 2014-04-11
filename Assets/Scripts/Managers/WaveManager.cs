@@ -198,10 +198,10 @@ public class WaveManager : MonoBehaviour {
         if (AllWavesSpawned)
         {
 
-            GameObject[] games = GameObject.FindGameObjectsWithTag("Enemy");
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
             //int numEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-            if (games.Length <= 0)
+            if (enemies.Length <= 0)
             {
                 readyToEndLevel = true;
             }

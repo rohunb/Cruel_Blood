@@ -26,7 +26,7 @@ public class Axe : Weapon {
     {
         if (SoundManager.instance.SoundOn)
         {
-            Debug.Log("S");
+            //Debug.Log("S");
             audio.Play();
         }
     }

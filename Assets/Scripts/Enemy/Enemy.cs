@@ -105,7 +105,8 @@ public class Enemy : MonoBehaviour {
             }
 
         }
-
+        Debug.Log(gameObject.name + "invinc", this);
+        Debug.Log(damage);
         invincible = true;
     }
 

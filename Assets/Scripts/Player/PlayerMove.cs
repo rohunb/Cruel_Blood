@@ -81,7 +81,7 @@ public class PlayerMove : MonoBehaviour
             timeTillScreen += Time.deltaTime;
             //this.GetComponent<SpriteRenderer>().color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 0.0f);
 			this.gameObject.SetActive(false);
-            if(timeTillScreen >= TIME_TO_GAMEOVER)
+            //if(timeTillScreen >= TIME_TO_GAMEOVER)
                 Application.LoadLevel("GameOver");
         }
     }

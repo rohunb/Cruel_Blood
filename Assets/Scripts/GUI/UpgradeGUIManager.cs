@@ -92,7 +92,7 @@ public class UpgradeGUIManager : MonoBehaviour {
             }
 
         }
-        Debug.Log(StatsAndGlobals.Instance.swordLevel);
+        //Debug.Log(StatsAndGlobals.Instance.swordLevel);
         upgradeLevel[0] = StatsAndGlobals.Instance.swordLevel;
         upgradeLevel[1] = StatsAndGlobals.Instance.hammerLevel;
         upgradeLevel[2] = StatsAndGlobals.Instance.bowLevel;
@@ -259,10 +259,10 @@ public class UpgradeGUIManager : MonoBehaviour {
            
         
         int count = Input.touchCount;
-        Debug.Log(StatsAndGlobals.Instance.CurrentLitresOfBlood);
+        //Debug.Log(StatsAndGlobals.Instance.CurrentLitresOfBlood);
         //Debug.Log(upgradeLevel[0]);
-        Debug.Log("upgrade" + ((upgradeLevel[0] + 1) * 100));
-        Debug.Log((StatsAndGlobals.Instance.CurrentLitresOfBlood >= ((upgradeLevel[0] + 1) * 100)));
+        //Debug.Log("upgrade" + ((upgradeLevel[0] + 1) * 100));
+        //Debug.Log((StatsAndGlobals.Instance.CurrentLitresOfBlood >= ((upgradeLevel[0] + 1) * 100)));
         for (int i = 0; i < count; i++)
         {
             Touch touch = Input.GetTouch(i);
