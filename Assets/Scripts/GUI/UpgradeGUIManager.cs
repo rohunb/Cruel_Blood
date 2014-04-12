@@ -54,14 +54,16 @@ public class UpgradeGUIManager : MonoBehaviour {
 
 
 
-        confBoxes[0].transform.position = new Vector3(0f, 0f, 1f);
+        confBoxes[0].transform.position = new Vector3(0f, 0f, 0f);
         confBoxes[1].transform.position = new Vector3(0f, 0f, 1f);
         confBoxes[2].transform.position = new Vector3(0f, 0f, 1f);
         //yes button
 
         //buttonRect = new Rect(Screen.width / 2 - buttonPadding * 2, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
         //buttonRect = new Rect(Screen.width / 2 - confBoxWidth / 2 , Screen.height / 2 - (confBoxHeight*2), buttonWidth, buttonHeight);
-        buttonRect = new Rect(Screen.width / 2.50f, Screen.height / 1.86f, buttonWidth, buttonHeight);
+        buttonRect = new Rect(Screen.width / 2.37f, Screen.height / 1.68f, buttonWidth, buttonHeight);
+        Debug.Log(Screen.width);
+        Debug.Log(buttonRect);
         confBoxes[1].guiTexture.pixelInset = buttonRect;
         //touchZones[buttons.Length + 1] = new Rect(buttonRect);
         touchZones[buttons.Length + 1] = new Rect(buttonRect);
@@ -72,7 +74,7 @@ public class UpgradeGUIManager : MonoBehaviour {
         //                    buttonWidth, buttonHeight);
         //buttonRect = new Rect(Screen.width / 2 + buttonPadding, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
         //buttonRect = new Rect(Screen.width / 2 + confBoxWidth / 2 - buttonWidth * 2, Screen.height / 2 - (confBoxHeight * 2), buttonWidth, buttonHeight);
-        buttonRect = new Rect(Screen.width / 2.01f, Screen.height / 1.86f, buttonWidth, buttonHeight);
+        buttonRect = new Rect(Screen.width / 1.9f, Screen.height / 1.68f, buttonWidth, buttonHeight);
         confBoxes[2].guiTexture.pixelInset = buttonRect;
         touchZones[buttons.Length + 2] = new Rect(buttonRect);
 
