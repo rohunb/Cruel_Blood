@@ -28,9 +28,17 @@ public class UpgradeGUIManager : MonoBehaviour {
     private bool isUpgrading;
 	// Use this for initialization
 	void Start () {
+
+        buttonWidth = Screen.width / 21.333f;
+        buttonHeight = Screen.height / 13.0f;
+        buttonPadding = Screen.width/13.44f;
+
+        confBoxWidth = Screen.width / 3.77f;
+        confBoxHeight = Screen.height / 7.2f;
+
         touchZones = new Rect[buttons.Length+confBoxes.Length];
         showConf = false;
-        buttonPadding = Screen.width / (buttons.Length*2.4f);
+        //buttonPadding = Screen.width / (buttons.Length*2.4f);
         firstButtonPos.x += buttonPadding;
         upgradeLevel = new int[buttons.Length];
         bars = new GameObject[buttons.Length, numBars];
@@ -43,26 +51,36 @@ public class UpgradeGUIManager : MonoBehaviour {
             confBoxes[i].transform.localScale = Vector3.zero;
             //confBoxes[i].guiTexture.texture=confBoxTextures[i];
         }
-        buttonRect = new Rect(Screen.width / 2 - buttonPadding * 2, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
+
+
+
+        confBoxes[0].transform.position = new Vector3(0f, 0f, 1f);
+        confBoxes[1].transform.position = new Vector3(0f, 0f, 1f);
+        confBoxes[2].transform.position = new Vector3(0f, 0f, 1f);
+        //yes button
+
+        //buttonRect = new Rect(Screen.width / 2 - buttonPadding * 2, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
+        //buttonRect = new Rect(Screen.width / 2 - confBoxWidth / 2 , Screen.height / 2 - (confBoxHeight*2), buttonWidth, buttonHeight);
+        buttonRect = new Rect(Screen.width / 2.50f, Screen.height / 1.86f, buttonWidth, buttonHeight);
         confBoxes[1].guiTexture.pixelInset = buttonRect;
         //touchZones[buttons.Length + 1] = new Rect(buttonRect);
         touchZones[buttons.Length + 1] = new Rect(buttonRect);
 
-        confBoxes[1].transform.position = new Vector3(0f, 0f, 1f);
-        confBoxes[2].transform.position = new Vector3(0f, 0f, 1f);
         //no button
         //buttonRect = new Rect(433.1f,
         //                    182.96f,
         //                    buttonWidth, buttonHeight);
-        buttonRect = new Rect(Screen.width / 2 + buttonPadding, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
+        //buttonRect = new Rect(Screen.width / 2 + buttonPadding, Screen.height / 2 - buttonHeight / 2, buttonWidth, buttonHeight);
+        //buttonRect = new Rect(Screen.width / 2 + confBoxWidth / 2 - buttonWidth * 2, Screen.height / 2 - (confBoxHeight * 2), buttonWidth, buttonHeight);
+        buttonRect = new Rect(Screen.width / 2.01f, Screen.height / 1.86f, buttonWidth, buttonHeight);
         confBoxes[2].guiTexture.pixelInset = buttonRect;
         touchZones[buttons.Length + 2] = new Rect(buttonRect);
 
         //dialogue box
-        //buttonRect = new Rect(-273.1f, 195.69f, confBoxWidth, confBoxHeight);
-        buttonRect = new Rect(Screen.width / 2 - confBoxWidth / 2, Screen.height / 2, confBoxWidth, confBoxHeight);
-
+        buttonRect = new Rect(Screen.width / 2 - confBoxWidth / 2, Screen.height / 2 + (confBoxHeight), confBoxWidth, confBoxHeight);
         confBoxes[0].guiTexture.pixelInset = buttonRect;
+
+
         touchZones[buttons.Length] = new Rect(buttonRect);
         for (int i = 0; i < buttons.Length; i++)
         {
