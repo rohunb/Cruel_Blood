@@ -23,3 +23,14 @@ D:\Appathon4\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 D:\Appathon4\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
 D:\Appathon4\obj\Debug\Assembly-CSharp.dll
 D:\Appathon4\obj\Debug\Assembly-CSharp.pdb
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\Assembly-CSharp.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\UnityEditor.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\UnityEngine.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\Mono.Cecil.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\nunit.framework.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\Unity.DataContract.dll
+D:\GitHub\Cruel_Blood\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\GitHub\Cruel_Blood\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\GitHub\Cruel_Blood\obj\Debug\Assembly-CSharp.dll
+D:\GitHub\Cruel_Blood\obj\Debug\Assembly-CSharp.pdb

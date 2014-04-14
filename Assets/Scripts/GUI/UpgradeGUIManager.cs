@@ -29,8 +29,10 @@ public class UpgradeGUIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        buttonWidth = Screen.width / 21.333f;
-        buttonHeight = Screen.height / 13.0f;
+        //buttonWidth = Screen.width / 21.333f;
+        //buttonHeight = Screen.height / 13.0f;
+        buttonWidth = Screen.width / 16.005f;
+        buttonHeight = Screen.height / 9.75f;
         buttonPadding = Screen.width/13.44f;
 
         confBoxWidth = Screen.width / 3.77f;
